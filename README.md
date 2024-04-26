@@ -27,3 +27,7 @@ Instagram Page:
 
 LinkedIn Page:
  https://www.linkedin.com/in/mohammad-abukhader-b39326291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
+
+Firebase Hosting Link:
+You can access the hosted website on Firebase via the following link:
+https://my-portfolio-e17e8.web.app/
