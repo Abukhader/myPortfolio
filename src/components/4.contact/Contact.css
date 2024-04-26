@@ -1,0 +1,134 @@
+/*ملاحظات 
+لتوسيط عنصر block نعطيه width  و نجعل margin-left&right : auto
+
+لتوسيط عنصر flex justify-content : center;
+*/
+
+
+
+/*
+==================================
+Table of Contents:
+    1. left section
+    2. right section
+    3. Responsive Design
+==================================
+*/
+
+
+
+/*==============
+1. left section
+==============*/
+section.contact img.emailIcon{
+    margin-right: 1rem;
+    width: 3rem;
+}
+section.contact .title{
+    font-size: 2.5rem;
+    color: var(--title);
+    margin-bottom: 1rem;
+}
+section.contact .sub-title{
+    color: var(--subTitle);
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+}
+section.contact label{
+    color: var(--subTitle);
+}
+section.contact #email, section.contact #message{
+    all: unset;
+    background-color: rgba(63, 63, 70, .15);
+    border: 1px solid rgb(63, 63, 70);
+    width: 15rem;
+    padding: .5rem 1rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+    transition: .5s;
+    font-size: .7rem;
+}
+section.contact #email:focus,
+ section.contact #message:focus,
+ section.contact #email:hover,
+ section.contact #message:hover{
+    border: 1px solid var(--blue);
+}
+.light section.contact #email, .light section.contact #message{
+    background-color: rgba(255, 255, 255, .2);
+    color: #000;
+}
+.light section.contact #email:focus,
+.light section.contact #message:focus,
+.light section.contact #email:hover,
+.light section.contact #message:hover{
+    
+    border: 1px solid rgb(78, 80, 80);
+}
+section.contact #message{
+    min-height: 7rem;
+    resize: vertical;
+}
+section.contact .submit{
+    background-color: rgba(36, 37, 46, 1);
+    width: 5rem;
+    padding: .75rem 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    opacity: .7;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    transition: .5s;
+}
+section.contact .submit:hover{
+    opacity: 1;
+    scale: .95;
+}
+
+
+
+/*==============
+2. right section
+==============*/
+.animation .contact-animation{
+    height: 350px;
+    width: 350px;
+    margin-right: 5rem;
+    translate: 15px -25px;
+}
+
+
+
+/*==============
+3. Responsive Design
+==============*/
+@media (max-width: 600px){
+    section.contact .animation{
+        display: none;
+    }
+    section.contact form{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    section.contact div.flex{
+        flex-direction: column;
+        align-items: start;
+    }
+    section.contact #email, section.contact #message{
+        width: 100%;
+        margin-left: 0;
+        padding: 0.8rem 0;
+        margin-top: 1rem;
+    }
+    section.contact .submit{
+        width: 30%;
+        align-self: center;
+      }
+}
+@media (max-width: 1200px){
+    section.contact .animation{
+        display: none;
+    }
+}

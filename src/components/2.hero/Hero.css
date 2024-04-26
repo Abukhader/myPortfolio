@@ -1,0 +1,74 @@
+/*
+==================================
+Table of Contents:
+    1. left section
+    2. right section
+    3. Responsive Design
+==================================
+*/
+
+
+/*==============
+1. left section
+==============*/
+section.hero{
+    margin-top: 3rem;
+}
+section.hero .left-section{
+    flex-grow: 1;
+
+}
+section.hero .parent-avatar{
+    gap: .6rem;
+    min-height: 100px;
+}
+section.hero .avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid darkorange;
+    padding: 1px;
+    box-shadow: 1px 1px 40px rgb(204, 203, 203) inset;
+}
+section.hero .virified-icon{
+    width: 30px;
+    margin-bottom: .3rem;
+}
+section.hero h1.title{
+    font-size: 3rem;
+    line-height: 3.3rem;
+    margin: 25px 0;
+    color: var(--title);
+}
+section.hero .sub-title{
+    color: var(--subTitle);
+    font-size: .8rem;
+    line-height: 1.5rem;
+    margin-bottom: 30px;
+}
+section.hero .icons{
+    gap: 1rem;
+}
+section.hero .icons .iconFacebook, .iconInsta, .iconLinkedin{
+    cursor: pointer;
+}
+
+/*==============
+2. right section
+==============*/
+.right-section .hero-animation{
+    height: 250px;
+    width: 100%;
+    margin-right: 5rem;
+    translate: 20px 10px;
+} 
+
+
+/*==============
+3. Responsive Design
+==============*/
+@media (max-width: 1200px){
+    .right-section .hero-animation{
+        display: none;
+    }
+}
